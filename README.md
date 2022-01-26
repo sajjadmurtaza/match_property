@@ -60,27 +60,33 @@ Simple API to recommended properties based on locations, property type and marke
 
 * first clone the directory 
                       ```
-                      git clone git@github.com:sajjadmurtaza/matching_customer_and_property.git'
+                      git clone git@github.com:sajjadmurtaza/match_property.git'
                       ```
- *  ```cd matching_customer_and_property```
+ *  ```cd match_property```
 
  *  ```bundle install ```
  *  ```rake db:create```
  *  ```rake db:migrate```
- *  ```rake db:seed```
 
  or
 
  *  ```rake db:setup```
 
+ 
+***
+
 And import PostgreSQL data dump:
 
  * **psql match_property_development < properties.sql**
  
+ ***
+
  *  ```rails s ```
  
+ ***
  Then open Postman or Insomnia or any API Testing Tool to connect with server
  
+
  * Enter url ```http://localhost:3000/api/v1/properties``` and pass parameters as json
 
 
